@@ -49,6 +49,7 @@
             height: 30px;
             margin: 0 10px;
             border-radius: 10px;
+            font-weight: bold;
         }
 
         .todo-item{
@@ -58,6 +59,7 @@
             margin: 10px 0;
             padding: 10px;
             border-radius: 25px;
+            font-weight: bold;
         }
 
         .btn {
@@ -84,7 +86,7 @@
         <div class="todo-item google-font"> Write Task ✨ </div>
     </div>
     <div class="btn">
-        <input type="text" id="todo-input" placeholder="Add a todo" class="todo-input google-font">
+        <input type="text" id="todo-input" placeholder="Add a todo " class="todo-input google-font">
         <button onclick="add()" class="add-btn">
             Add
         </button>
@@ -105,7 +107,7 @@
             listContainer.innerHTML = '';
 
             for (const todoItem of todoList) {
-                listContainer.innerHTML += `<div class="todo-item"> ${todoItem} </div>`
+                listContainer.innerHTML += `<div class="todo-item google-font"><input type="checkbox"/> ${todoItem} </div>`
             }
         }
     </script>
